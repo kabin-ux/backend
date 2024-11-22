@@ -26,7 +26,7 @@ import "./Model/PdfModel.js"; // Adjusted import for the PdfModel
 import connectToDB from "./Database/db.js";
 import { PORT } from "./config.js";
 import pdfRouter from "./Routes/PdfRoute.js";
-import { registerAdmin } from "./ErrorHandler/AdminregisterHandler.js";
+import  registerAdmin  from "./ErrorHandler/AdminregisterHandler.js";
 
 // Load environment variables
 dotenv.config();
