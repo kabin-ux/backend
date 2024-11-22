@@ -2,7 +2,7 @@ import {config} from 'dotenv';
 
 config();
 
-export let PORT = process.env.PORT;
+export let PORT = process.env.PORT || 5001;
 export let MONGODB_URL = process.env.MONGODB_URL;
 
 export let ACCESS_TOKEN_SECRET = process.env.ACCESS_TOKEN_SECRET;
