@@ -2,7 +2,7 @@
 import AdminRegister from "../Model/AdminRegister.js";
 
 // Registration handler
-export const registerAdmin = async (req, res) => {
+const registerAdmin = async (req, res) => {
   const { fname, lname, email, password } = req.body;
   try {
     const user = await AdminRegister.create({ fname, lname, email, password });
@@ -20,3 +20,5 @@ export const registerAdmin = async (req, res) => {
     return res.status(500).json({ errorMessage: "An error occurred while registering the user" });
   }
 };
+
+export default registerAdmin;
